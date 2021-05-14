@@ -104,12 +104,15 @@ nav > ul > li:hover:after {
     justify-content: space-around;
     align-items: center;
     pointer-events: none;
+    z-index: 1;
+    opacity: 0;
   }
 
   .nav-links.open {
     clip-path: circle(2000px at 90% -10%);
     -webkit-clip-path: circle(2000px at 90% -10%);
     pointer-events: all;
+    opacity: 95%;
   }
 
   nav > ul > li {

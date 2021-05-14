@@ -5,6 +5,11 @@
   height: 90vh;
 }
 
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .name {
   width: 100%;
   padding-top: 40px;
@@ -22,14 +27,34 @@
   font-size: 4rem;
   color: #36363a;
   text-shadow: 1px 2px 2px var(--default-text-color);
+  -webkit-text-shadow: 1px 2px 2px var(--default-text-color);
+  -moz-text-shadow: 1px 2px 2px var(--default-text-color);
 }
 
 #intro img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   display: none;
   border-radius: 150px;
   box-shadow: 2.5px 2.5px 10px var(--light-blue);
+  -webkit-box-shadow: 2.5px 2.5px 10px var(--light-blue);
+  -moz-box-shadow: 2.5px 2.5px 10px var(--light-blue);
+}
+
+.resume {
+  margin-top: 40px;
+}
+
+.resume-btn {
+  transition: all 0.2s ease-in;
+}
+
+.resume-btn:hover {
+  background-color: transparent;
+  transition: all 0.2s ease-in;
+  border: 2px solid var(--bg-color);
+  background-color: var(--light-blue);
+  color: var(--bg-color);
 }
 
 @media only screen and (max-width: 992px) {
@@ -42,29 +67,30 @@
 }
 
 @media screen and (max-width: 768px) {
+  #intro {
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
   .name {
     font-size: 5rem;
   }
   .profession {
     font-size: 3rem;
     text-shadow: 0.5px 1px 1px var(--default-text-color);
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #intro {
-    justify-content: space-evenly;
-    flex-direction: column;
+    -webkit-text-shadow: 0.5px 1px 1px var(--default-text-color);
+    -moz-text-shadow: 0.5px 1px 1px var(--default-text-color);
   }
   #intro img {
     display: block;
   }
+}
+
+@media only screen and (max-width: 480px) {
   .name {
     font-size: 3.5rem;
   }
   .profession {
     font-size: 1.8rem;
-    text-shadow: 0.5px 1px 1px var(--default-text-color);
   }
 }
 
