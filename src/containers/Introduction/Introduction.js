@@ -45,7 +45,7 @@ const Introduction = () => {
   return (
     <section id="intro">
       <div className="image" ref={imgRef}>
-        <img src="../../assets/images/dp.png" alt="profile pic" />
+        <img src="../../PortfolioV2/assets/images/dp.png" alt="profile pic" />
       </div>
       <div className="intro-text">
         <h1 className="hi" ref={hiRef}>
