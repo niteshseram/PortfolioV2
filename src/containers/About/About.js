@@ -1,10 +1,11 @@
 import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./About.css";
+import {
+  ScrollTriggerTimeline,
+  SwipeInFromLeft,
+  SwipeInFromRight,
+} from "../../animation";
 import data from "../../data";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   const headingRef = useRef(null);
@@ -13,37 +14,15 @@ const About = () => {
   const aboutImageRef = useRef(null);
 
   useEffect(() => {
-    let t1 = gsap.timeline({
-      scrollTrigger: {
-        trigger: aboutRef.current,
-        markers: false,
-        start: "top 50%",
-        end: "bottom top",
-        toggleActions: "restart complete reverse reset",
-      },
-    });
-    t1.from(headingRef.current, {
-      duration: 2,
-      x: "-100",
-      opacity: 0,
-      ease: "ease-in",
-    });
-    t1.from(aboutTextRef.current, {
-      duration: 2,
-      x: "-100",
-      opacity: 0,
-      ease: "ease-in",
-    });
-    t1.from(aboutImageRef.current, {
-      duration: 2,
-      x: 100,
-      opacity: 0,
-      ease: "ease-in",
-    });
+    let t1 = ScrollTriggerTimeline(aboutRef.current);
+
+    SwipeInFromLeft(t1, headingRef.current);
+    SwipeInFromLeft(t1, aboutTextRef.current);
+    SwipeInFromRight(t1, aboutImageRef.current);
   });
 
   return (
-    <section id="about" ref={aboutRef}>
+    <section id="about" className="section" ref={aboutRef}>
       <div className="section-heading" ref={headingRef}>
         <h1 data-text="A little about me">ABOUT</h1>
       </div>

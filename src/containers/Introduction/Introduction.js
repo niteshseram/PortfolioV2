@@ -1,36 +1,17 @@
 import React, { useEffect } from "react";
 import "./Introduction.css";
-import { gsap, TweenLite } from "gsap";
+import { Timeline, DropDown } from "../../animation";
 import data from "../../data";
 
 const Introduction = () => {
   useEffect(() => {
-    let t1 = gsap.timeline();
-    TweenLite.fromTo(
-      ".image",
-      { opacity: 0, scale: 0 },
-      {
-        opacity: 1,
-        scale: 1,
-        duration: 1,
-      }
-    );
-    t1.fromTo(".hi", { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: 1 });
-    t1.fromTo(
-      ".name",
-      { y: -50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1 }
-    );
-    t1.fromTo(
-      ".profession",
-      { y: -50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1 }
-    );
-    t1.fromTo(
-      ".resume",
-      { y: -50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1 }
-    );
+    let t1 = Timeline();
+
+    DropDown(t1, ".image");
+    DropDown(t1, ".hi");
+    DropDown(t1, ".name");
+    DropDown(t1, ".profession");
+    DropDown(t1, ".resume");
   }, []);
 
   return (

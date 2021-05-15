@@ -24,10 +24,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  #about {
-    padding: 0 20px;
-  }
-
   #about img {
     display: block;
   }
@@ -37,19 +33,12 @@
 }
 
 @media only screen and (min-width: 992px) {
-  #about {
-    padding: 0 100px;
-  }
   #about .about-text {
     max-width: 500px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  #about {
-    padding: 0 150px;
-  }
-
   #about .about-text {
     max-width: 600px;
   }
