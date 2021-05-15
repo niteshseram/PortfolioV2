@@ -29,14 +29,14 @@ a {
   --bg-color: #252529;
   --default-text-color: #f0f3ff;
   --humburger-bubble: #2e334d;
-  --light-blue: #589bff;
+  --light-cyan: #66a3b8;
+  --secondary-color: #36363a;
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--default-text-color);
   margin: 0px 50px;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {

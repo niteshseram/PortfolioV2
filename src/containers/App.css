@@ -6,7 +6,7 @@
   cursor: pointer;
   border: 0px;
   background-color: transparent;
-  border: 2px solid var(--light-blue);
+  border: 2px solid var(--light-cyan);
   color: var(--default-text-color);
 }
 

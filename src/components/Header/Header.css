@@ -32,7 +32,7 @@ nav > ul > li > a {
 nav > ul > li:after {
   content: "";
   position: absolute;
-  background-color: var(--light-blue);
+  background-color: var(--light-cyan);
   height: 3px;
   width: 0%;
   left: 49%;
@@ -109,10 +109,11 @@ nav > ul > li:hover:after {
   }
 
   .nav-links.open {
+    opacity: 0.9;
     clip-path: circle(2000px at 90% -10%);
     -webkit-clip-path: circle(2000px at 90% -10%);
     pointer-events: all;
-    opacity: 95%;
+    z-index: 1;
   }
 
   nav > ul > li {

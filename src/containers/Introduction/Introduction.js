@@ -1,18 +1,13 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./Introduction.css";
 import { gsap, TweenLite } from "gsap";
+import data from "../../data";
 
 const Introduction = () => {
-  const imgRef = useRef(null);
-  const hiRef = useRef(null);
-  const nameRef = useRef(null);
-  const profRef = useRef(null);
-  const resumeRef = useRef(null);
-
   useEffect(() => {
     let t1 = gsap.timeline();
     TweenLite.fromTo(
-      imgRef.current,
+      ".image",
       { opacity: 0, scale: 0 },
       {
         opacity: 1,
@@ -20,23 +15,19 @@ const Introduction = () => {
         duration: 1,
       }
     );
+    t1.fromTo(".hi", { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: 1 });
     t1.fromTo(
-      hiRef.current,
+      ".name",
       { y: -50, opacity: 0 },
       { y: 0, opacity: 1, duration: 1 }
     );
     t1.fromTo(
-      nameRef.current,
+      ".profession",
       { y: -50, opacity: 0 },
       { y: 0, opacity: 1, duration: 1 }
     );
     t1.fromTo(
-      profRef.current,
-      { y: -50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1 }
-    );
-    t1.fromTo(
-      resumeRef.current,
+      ".resume",
       { y: -50, opacity: 0 },
       { y: 0, opacity: 1, duration: 1 }
     );
@@ -44,20 +35,14 @@ const Introduction = () => {
 
   return (
     <section id="intro">
-      <div className="image" ref={imgRef}>
-        <img src="../../PortfolioV2/assets/images/dp.png" alt="profile pic" />
+      <div className="image">
+        <img src={data.profileUrl} alt="profile pic" />
       </div>
       <div className="intro-text">
-        <h1 className="hi" ref={hiRef}>
-          Hi, I'm
-        </h1>
-        <h1 className="name" ref={nameRef}>
-          Nitesh Seram
-        </h1>
-        <h2 className="profession" ref={profRef}>
-          Full Stack Web Developer
-        </h2>
-        <div className="resume" ref={resumeRef}>
+        <h1 className="hi">Hi, I'm</h1>
+        <h1 className="name">{data.name}</h1>
+        <h2 className="profession">{data.profession}</h2>
+        <div className="resume">
           <a className="btn resume-btn" href="resume">
             Get Resume
           </a>

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .intro-text {
@@ -25,10 +25,7 @@
 
 .profession {
   font-size: 4rem;
-  color: #36363a;
-  text-shadow: 1px 2px 2px var(--default-text-color);
-  -webkit-text-shadow: 1px 2px 2px var(--default-text-color);
-  -moz-text-shadow: 1px 2px 2px var(--default-text-color);
+  color: var(--light-cyan);
 }
 
 #intro img {
@@ -36,9 +33,9 @@
   height: 200px;
   display: none;
   border-radius: 150px;
-  box-shadow: 2.5px 2.5px 10px var(--light-blue);
-  -webkit-box-shadow: 2.5px 2.5px 10px var(--light-blue);
-  -moz-box-shadow: 2.5px 2.5px 10px var(--light-blue);
+  box-shadow: 2.5px 2.5px 10px var(--light-cyan);
+  -webkit-box-shadow: 2.5px 2.5px 10px var(--light-cyan);
+  -moz-box-shadow: 2.5px 2.5px 10px var(--light-cyan);
 }
 
 .resume {
@@ -53,7 +50,7 @@
   background-color: transparent;
   transition: all 0.2s ease-in;
   border: 2px solid var(--bg-color);
-  background-color: var(--light-blue);
+  background-color: var(--light-cyan);
   color: var(--bg-color);
 }
 
@@ -76,9 +73,6 @@
   }
   .profession {
     font-size: 3rem;
-    text-shadow: 0.5px 1px 1px var(--default-text-color);
-    -webkit-text-shadow: 0.5px 1px 1px var(--default-text-color);
-    -moz-text-shadow: 0.5px 1px 1px var(--default-text-color);
   }
   #intro img {
     display: block;
