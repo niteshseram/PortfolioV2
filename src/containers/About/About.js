@@ -26,7 +26,7 @@ const About = () => {
       <div className="section-heading" ref={headingRef}>
         <h1 data-text="A little about me">ABOUT</h1>
       </div>
-      <section className="section-content">
+      <div className="section-content">
         <div className="about-text" ref={aboutTextRef}>
           <p>{data.aboutMe[0]}</p>
           <br />
@@ -37,7 +37,7 @@ const About = () => {
         <div className="about-img" ref={aboutImageRef}>
           <img src={data.profileUrl} alt="profile pic" />
         </div>
-      </section>
+      </div>
     </section>
   );
 };

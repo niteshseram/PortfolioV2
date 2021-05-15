@@ -1,0 +1,33 @@
+.skill-label {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid var(--light-cyan);
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.skill-label:hover {
+  background-color: var(--light-cyan);
+  color: var(--bg-color);
+  transition: all 0.2s ease-in;
+}
+
+.skill-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px;
+}
+
+.skill-content img {
+  height: 25px;
+  width: 25px;
+  margin: 0px 20px;
+}
+
+.skill-content > p {
+  font-size: 1.2rem;
+}

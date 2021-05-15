@@ -19,12 +19,6 @@ main .section-content {
   margin-top: 50px;
 }
 
-@media screen and (min-width: 768px) {
-  main .section-content p {
-    font-size: 1.2rem;
-  }
-}
-
 @media screen and (max-width: 768px) {
   main .section-heading > h1 {
     font-size: 4rem;
@@ -45,7 +39,10 @@ main .section-content {
     font-size: 2rem;
   }
   main .section-heading > h1::after {
-    transform: translate(5px, 10px);
+    font-size: 1.7rem;
+  }
+  main .section-heading > h1::after {
+    transform: translate(10px, 20px);
   }
 }
 
