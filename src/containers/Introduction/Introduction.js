@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 import "./Introduction.css";
-import { Timeline, DropDown } from "../../animation";
+import { Timeline, FadeUpEnter } from "../../animation";
 import data from "../../data";
 
 const Introduction = () => {
   useEffect(() => {
     let t1 = Timeline();
 
-    DropDown(t1, ".image");
-    DropDown(t1, ".hi");
-    DropDown(t1, ".name");
-    DropDown(t1, ".profession");
-    DropDown(t1, ".resume");
+    FadeUpEnter(t1, ".image");
+    FadeUpEnter(t1, ".hi");
+    FadeUpEnter(t1, ".name");
+    FadeUpEnter(t1, ".profession");
+    FadeUpEnter(t1, ".resume");
   }, []);
 
   return (

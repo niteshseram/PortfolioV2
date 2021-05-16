@@ -4,9 +4,10 @@
   align-items: center;
   border-radius: 10px;
   border: 1px solid var(--light-cyan);
-  background-color: var(--secondary-color);
   cursor: pointer;
   transition: all 0.2s ease-in;
+  box-shadow: 1px 1px 1px var(--secondary-color) 0 3px;
+  z-index: 1;
 }
 
 .skill-label:hover {
@@ -19,13 +20,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 5px;
+  padding: 5px 15px;
 }
 
 .skill-content img {
   height: 25px;
   width: 25px;
-  margin: 0px 20px;
+  margin-right: 20px;
 }
 
 .skill-content > p {

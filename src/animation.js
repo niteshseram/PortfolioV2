@@ -7,8 +7,8 @@ const ScrollTriggerTimeline = (container) => {
   return gsap.timeline({
     scrollTrigger: {
       trigger: container,
-      markers: false,
-      start: "top 50%",
+      markers: true,
+      start: "top 70%",
       end: "bottom top",
       toggleActions: "restart complete none reset",
     },
@@ -21,10 +21,26 @@ const Timeline = () => {
 
 const DropDown = (timeline, element) => {
   timeline.from(element, {
-    duration: 1,
+    duration: 0.1,
     y: "-50",
     opacity: 0,
     ease: "easeIn",
+    stagger: {
+      each: 0.2,
+    },
+  });
+};
+
+const FadeUpEnter = (timeline, element) => {
+  timeline.from(element, {
+    duration: 0.3,
+    y: "30",
+    opacity: 0.01,
+    ease: "easeIn",
+    stagger: {
+      each: 1,
+      from: "edges",
+    },
   });
 };
 
@@ -49,6 +65,7 @@ export {
   Timeline,
   ScrollTriggerTimeline,
   DropDown,
+  FadeUpEnter,
   SwipeInFromLeft,
   SwipeInFromRight,
 };

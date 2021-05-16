@@ -10,6 +10,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -23,9 +24,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-/* @media only screen and (max-width: 480px) {
+@media only screen and (max-width: 360px) {
   .skill-section {
     grid-template-columns: repeat(1, 1fr);
   }
-} */
+}
