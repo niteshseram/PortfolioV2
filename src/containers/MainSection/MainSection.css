@@ -1,3 +1,7 @@
+main {
+  padding: 0 50px;
+}
+
 main .section-heading > h1 {
   font-size: 5rem;
   position: relative;
@@ -22,6 +26,9 @@ main .section-content {
 @media screen and (max-width: 768px) {
   main .section-heading > h1 {
     font-size: 4rem;
+  }
+  main {
+    padding: 0 20px;
   }
 }
 

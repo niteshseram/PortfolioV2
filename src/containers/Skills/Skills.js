@@ -23,7 +23,7 @@ const Skills = () => {
   return (
     <section id="skills" className="section" ref={skillSectionRef}>
       <div className="section-heading" ref={skillHeadingRef}>
-        <h1 data-text="Tech I have explored">Skills</h1>
+        <h1 data-text="Tech I have explored">SKILLS</h1>
       </div>
       <div className="section-content skill-section" ref={skillsRef}>
         {data.skills.map((skill, i) => (

@@ -37,11 +37,11 @@ a {
 body {
   background-color: var(--bg-color);
   color: var(--default-text-color);
-  margin: 0px 50px;
+  /* padding: 0px 50px; */
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    margin: 0 15px;
-  }
+  /* body {
+    padding: 0 15px;
+  } */
 }

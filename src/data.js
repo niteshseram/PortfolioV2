@@ -22,6 +22,16 @@ const data = {
     ["Kubernetes", "../../PortfolioV2/assets/logos/k8s.png"],
     ["AWS", "../../PortfolioV2/assets/logos/aws.png"],
   ],
+  socialLinks: {
+    icons: {
+      github: "../../PortfolioV2/assets/images/github.svg",
+      linkedin: "../../PortfolioV2/assets/images/linkedin.svg",
+    },
+    profile: {
+      github: "https://github.com/niteshseram",
+      linkedin: "https://linkedin.com/in/niteshseram",
+    },
+  },
 };
 
 export default data;

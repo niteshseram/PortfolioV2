@@ -16,3 +16,16 @@
     border-radius: 30px;
   }
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--light-cyan);
+  border-radius: 25px;
+}

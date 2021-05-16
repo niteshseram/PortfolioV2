@@ -44,28 +44,4 @@ const FadeUpEnter = (timeline, element) => {
   });
 };
 
-const SwipeInFromLeft = (timeline, element) => {
-  timeline.from(element, {
-    duration: 1,
-    x: "-100",
-    opacity: 0,
-    ease: "easeIn",
-  });
-};
-const SwipeInFromRight = (timeline, element) => {
-  timeline.from(element, {
-    duration: 1,
-    x: "100",
-    opacity: 0,
-    ease: "easeIn",
-  });
-};
-
-export {
-  Timeline,
-  ScrollTriggerTimeline,
-  FadeDownEnter,
-  FadeUpEnter,
-  SwipeInFromLeft,
-  SwipeInFromRight,
-};
+export { Timeline, ScrollTriggerTimeline, FadeDownEnter, FadeUpEnter };

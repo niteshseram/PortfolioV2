@@ -1,0 +1,14 @@
+#project-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  width: 100%;
+}

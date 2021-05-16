@@ -5,7 +5,7 @@ import Links from "../Links/Links";
 
 const Header = () => {
   const navLinks = [
-    { link: "#about", title: "ABOUT" },
+    { link: "#about-section", title: "ABOUT" },
     { link: "#skills", title: "SKILLS" },
     { link: "#project", title: "PROJECT" },
     { link: "#contact", title: "CONTACT" },
