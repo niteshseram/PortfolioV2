@@ -2,7 +2,11 @@ import React, { useEffect, useRef } from "react";
 import "./Skills.css";
 import data from "../../data";
 import SkillLabel from "../../components/SkillLabel/SkillLabel";
-import { ScrollTriggerTimeline, FadeUpEnter, DropDown } from "../../animation";
+import {
+  ScrollTriggerTimeline,
+  FadeUpEnter,
+  FadeDownEnter,
+} from "../../animation";
 
 const Skills = () => {
   const skillSectionRef = useRef(null);
@@ -13,7 +17,7 @@ const Skills = () => {
     let t1 = ScrollTriggerTimeline(skillSectionRef.current);
     let t2 = ScrollTriggerTimeline(skillsRef.current);
     FadeUpEnter(t1, skillHeadingRef.current);
-    DropDown(t2, ".skill-label");
+    FadeDownEnter(t2, ".skill-label");
   });
 
   return (
